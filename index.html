@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Services Angularjs 1</title>
+	<!-- Latest compiled and minified CSS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="libs/angular.min.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="js/main.js" type="text/javascript" charset="utf-8" ></script>
+</head>
+<body ng-app='app'>
+	<div class="container" ng-controller="ctrl" >
+		<div class="form-group">
+			<label class="label label-default">Constant</label>
+			<p class='description'>{{movieConstant}}</p>			
+		</div>
+		<div class="form-group">
+			<label class="label label-default">Constant</label>
+			<p class='description'>{{movieTitle}}</p>			
+		</div>
+		<div class="form-group">
+			<label class="label label-default">Value</label>
+			<p class='description'>{{movieTitleValue}}</p>			
+		</div>
+		<div class="form-group">
+			<label class="label label-default">Service</label>
+			<p class='description'>{{movie}}</p>			
+		</div>
+		<div class="form-group">
+			<label class="label label-default">Service output</label>
+			<p class='description'>{{serviceOutput}}</p>			
+		</div>
+		<div class="form-group">
+			<label class="label label-default">Factory output</label>
+			<p class='description'>{{factoryOutput}}</p>			
+		</div>
+		<div class="form-group">
+			<label class="label label-default">Provider output</label>
+			<p class='description'>{{providerOutput}}</p>			
+		</div>
+	</div>
+	<div class="container" ng-controller="demoFactoryCtrl" >
+		<label class="label label-primative">Example Factory</label>
+		<div class="form-group">
+			<label class="label label-default">Factory</label>
+			<p class='description'>{{clientId}}</p>			
+			<p class='description'>{{token}}</p>			
+		</div>
+</body>
+</html>
